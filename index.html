@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="icon" href="./galeria/patopatopfp.png" type="image/x-icon">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff7a;
+      color: #000000;
+    }
+    
+    header {
+      background-color: #000dc0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+   
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+    
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    aside {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      flex: 2;
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: #000000;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    footer {
+      background-color: #000dc0;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+/* Contenedor del video, centrado y posicionado en la parte inferior */
+.video-container {
+  width: 80%; /* Ajusta el ancho de la caja */
+  max-width: 700px; /* Ancho máximo de la caja */
+  margin: 20px auto; /* Centra la caja en la página */
+  padding: 10px; /* Espacio dentro de la caja */
+  background-color: #f9f9f9; /* Color de fondo de la caja */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+  /* Posicionamiento en la parte inferior */
+  position: absolute;
+  bottom: 20px; /* 20px de margen desde el fondo de la página */
+  left: 50%; /* Posiciona la caja en el centro horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para que quede perfectamente centrada */
+}
+video {
+  width: 100%; /* El video ocupará todo el ancho de la caja */
+  height: auto; /* Mantiene la proporción del video */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi Página</h1>
+    <p>¡Aqui puedes ver un poco lo que me apasiona!</p>
+  </header>
+  <nav>
+    <a href="#index.html">Inicio</a>
+    <a href="horario-marcos.html">Horario</a>
+    <a href="galeria-marcos.html">Galeria</a>
+    <a href="formulario-marcos.html">Trabaja con Nosotros</a>
+  </nav>
+  <main>
+    <aside>
+      <h2>Sobre Mi</h2>
+      <img src="./galeria/vibe-rabbit.gif" alt="Foto de perfil">
+      <p><strong>Nombre:</strong> Marcos Guerrero</p>
+      <p><strong>Estudios Actuales:</strong> Administracion de Sistemas y Redes</p>
+    </aside>
+    <section>
+      <article id="quien-soy">
+        <h2>Quien Soy</h2>
+        <p>Soy una persona calmada que disfruta de la paz, si tienes gustos parecidos a los mios ya eres mi amigo.</p>
+      </article>
+      <article id="aficiones">
+        <h2>Aficiones</h2>
+        <p>En mi tiempo libre suelo hacer:</p>
+        <ul>
+          <li>Jugar videojuegos, sobre todo a <strong>Dark Souls, Bloodborne y ELDEN RING</strong>.</li>
+          <li>Estar sin hacer nada en casa</li>
+          <li>Coleccionar videojuegos, tanto como lanzamientos nuevos o titulos clasicos</li>
+          <li>Me gusta la lluvia</li>
+        </ul>
+      </article>
+    </section>
+    <div class="video-container">
+      <h2>Video:</h2>
+      <video controls>
+        <source src="./galeria/DS1.mp4" type="video/mp4">
+        <source src="mi_video.ogg" type="video/ogg">
+      </video>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024, Marcos Guerrero. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
